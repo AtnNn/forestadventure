@@ -1,0 +1,51 @@
+<html><head><title>Forest Adventure</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="sizes.js"></script>
+<script type="text/javascript" src="adventure.js"></script>
+<style>
+* {padding: 0px; margin: 0px;}
+
+body {
+ background-color: grey;
+ overflow: hidden;
+}
+
+#game div {
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
+#game {
+ width: 800px;
+ height: 600px;
+ background-color: white;
+ overflow: hidden;
+ position: relative;
+}
+
+#deaths {
+  z-index: 99;
+  font-family: mono;
+  text-align: right;
+  margin: 8px;
+  padding: 2px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  font-size: 15px;
+  width: 35px;
+  text-weight: bold;
+}
+
+</style>
+</head><body>
+<table style="height:100%;margin:auto"><tr><td>
+<div style="width:800;height:600;border:3px solid black;overflow:hidden" id="game">
+</div>
+</td></tr></table>
+</body></html>
